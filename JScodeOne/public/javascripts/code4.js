@@ -28,7 +28,6 @@ const MIN_RATING = 0, MAX_RATING = 5;
  * @returns {null}
  */
 function main() {
-    doStuffz();
     if (continueResponse !== 0 && continueResponse !== 1) {
         setContinueResponse();
     }
@@ -135,16 +134,6 @@ function setContinueResponseFour() {
 
 /**
  * @method
- * @description turns a bunch of stuffz into numbers
- * @returns {null}
- */
-function doStuffz() {
-    yourRatings = 0;
-    numYourRatings = 0;
-}
-
-/**
- * @method
  * @description select what to rate
  * @returns {null}
  */
@@ -168,7 +157,7 @@ function setMenu() {
  * @returns {null}
  */
 function rateGame() {
-    if (NGNLratings === typeof undefined && numGameRatings === typeof undefined) {
+    if (NGNLratings === undefined && numGameRatings === undefined) {
         NGNLratings = 0;
         numGameRatings = 0;
     }
@@ -189,7 +178,7 @@ function rateGame() {
  * @returns {null}
  */
 function rateSword() {
-    if (SAOratings === typeof undefined && numSwordRatings === typeof undefined) {
+    if (SAOratings === undefined && numSwordRatings === undefined) {
         SAOratings = 0;
         numSwordRatings = 0;
     }
@@ -225,7 +214,7 @@ function newAnime() {
  * @returns {null}
  */
 function rateYourAnime() {
-    if (yourRatings === typeof undefined && numYourRatings === typeof undefined) {
+    if (yourRatings === undefined && numYourRatings === undefined) {
         yourRatings = 0;
         numYourRatings = 0;
     }
